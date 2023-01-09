@@ -2,53 +2,28 @@
 	import Header from './Header.svelte';
 	import './styles.css';
 	import '../app.css';
+	import Footer from './Footer.svelte';
+	import { darkMode } from '../stores';
+
+	/**
+	 * @type {boolean}
+	 */
+	let isDarkMode;
+	darkMode.subscribe((value) => {
+		isDarkMode = value;
+	});
 </script>
 
-<div class="app">
-	<Header />
-
-	<main>
-		<slot />
-	</main>
-
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
+<div class={isDarkMode ? 'dark' : 'light'}>
+	<div
+		class="flex flex-col min-h-screen justify-between main-background bg-slate-100 dark:bg-slate-800 text-text-gray-800 dark:text-gray-200"
+	>
+		<Header />
+		<main
+			class="container mx-auto p-8 my-28 backdrop-blur-3xl shadow rounded bg-black/10 dark:bg-white/10"
+		>
+			<slot />
+		</main>
+		<Footer />
+	</div>
 </div>
-
-<style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
-
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
-</style>
