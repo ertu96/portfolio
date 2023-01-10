@@ -18,10 +18,28 @@
 	<div
 		class="flex flex-col min-h-screen justify-between main-background bg-slate-100 dark:bg-slate-900 text-text-gray-800 dark:text-gray-200"
 	>
-		<Header />
-		<main class="p-8 my-20 container mx-auto backdrop-blur-3xl bg-white/10 dark:bg-black/10">
-			<slot />
-		</main>
+		<div class="drawer">
+			<input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+			<div class="drawer-content flex flex-col">
+				<Header />
+				<!-- Page content -->
+				<main class="p-8 my-20 container mx-auto backdrop-blur-3xl bg-white/10 dark:bg-black/10">
+					<slot />
+				</main>
+			</div>
+			<div class="drawer-side">
+				<label for="my-drawer-3" class="drawer-overlay" />
+				<ul
+					class="menu p-4 w-80 bg-gray-50/30 dark:bg-gray-900/30 text-gray-900 dark:text-gray-50 backdrop-blur-lg"
+				>
+					<!-- Sidebar -->
+					<li><a href="/me" class="cursor-pointer">Me</a></li>
+					<li><a href="/work" class="cursor-pointer">Projects</a></li>
+					<li><a href="/contact" class="cursor-pointer">Contact</a></li>
+					<li><a href="/about" class="cursor-pointer">About</a></li>
+				</ul>
+			</div>
+		</div>
 		<Footer />
 	</div>
 </div>
