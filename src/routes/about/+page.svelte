@@ -1,21 +1,29 @@
+<script>
+	import Check from '$lib/icons/Check.svelte';
+
+	const technologies = ['SvelteKit', 'TypeScript', 'Vite', 'Tailwindcss', 'DaisyUI'];
+</script>
+
 <svelte:head>
 	<title>About</title>
 	<meta name="description" content="About this app" />
 </svelte:head>
 
-<div class="text-column">
-	<h1>About this app</h1>
-
-	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
-	</p>
-
-	<pre>npm create svelte@latest</pre>
-
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
-	</p>
+<div class="hero ">
+	<div class="hero-content text-center">
+		<div class="max-w-2xl">
+			<h1 class="text-4xl font-bold">About my portfolio</h1>
+			<p class="py-4">This site was built using following Tech-Stack</p>
+			<div class="flex justify-center">
+				<ul class="mb-8 space-y-4 ">
+					{#each technologies as tech}
+						<li class="flex items-center space-x-3">
+							<Check />
+							<span>{tech}</span>
+						</li>
+					{/each}
+				</ul>
+			</div>
+		</div>
+	</div>
 </div>

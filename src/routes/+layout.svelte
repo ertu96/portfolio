@@ -1,8 +1,8 @@
 <script>
-	import Header from './Header.svelte';
+	import Header from '../components/Header.svelte';
 	import './styles.css';
 	import '../app.css';
-	import Footer from './Footer.svelte';
+	import Footer from '../components/Footer.svelte';
 	import { darkMode } from '../stores';
 
 	/**
@@ -16,12 +16,10 @@
 
 <div class={isDarkMode ? 'dark' : 'light'}>
 	<div
-		class="flex flex-col min-h-screen justify-between main-background bg-slate-100 dark:bg-slate-800 text-text-gray-800 dark:text-gray-200"
+		class="flex flex-col min-h-screen justify-between main-background bg-slate-100 dark:bg-slate-900 text-text-gray-800 dark:text-gray-200"
 	>
 		<Header />
-		<main
-			class="container mx-auto p-8 my-28 backdrop-blur-3xl shadow rounded bg-black/10 dark:bg-white/10"
-		>
+		<main class="p-8 my-20 container mx-auto backdrop-blur-3xl bg-white/10 dark:bg-black/10">
 			<slot />
 		</main>
 		<Footer />
