@@ -1,6 +1,5 @@
 <script>
 	import { darkMode } from '../stores';
-	import { Breakpoint } from '../enums/Breakpoint';
 	import Menu from '$lib/icons/Menu.svelte';
 
 	/**
