@@ -23,9 +23,8 @@
 	<div class="container px-4 my-2 flex flex-wrap justify-between items-center mx-auto">
 		<div>Ertugrul Kurnaz</div>
 		<div class="flex gap-6">
-			<div class="cursor-pointer">Home</div>
-			<div class=" cursor-pointer">My work</div>
-			<div class=" cursor-pointer">About</div>
+			<div class="cursor-pointer">My work</div>
+			<div class="cursor-pointer">About</div>
 		</div>
 		<button
 			class="btn btn-sm btn-outline dark:bg-gray-50 dark:hover:bg-transparent dark:hover:border-gray-50 dark:border-gray-900 text-black mx-1 w-10"
