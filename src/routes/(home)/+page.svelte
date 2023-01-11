@@ -2,6 +2,11 @@
 	import LogoWhite from '$lib/images/logo-white.png';
 </script>
 
+<svelte:head>
+	<title>Welcome</title>
+	<meta name="description" content="Welcome to my portfolio" />
+</svelte:head>
+
 <div class="grid justify-items-center gap-y-10 p-10">
 	<div class="h-[25vh]">
 		<img class="max-h-full" src={LogoWhite} alt="Ertugrul Kurnaz" />

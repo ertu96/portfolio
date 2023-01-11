@@ -75,7 +75,7 @@
 			/>
 			<ExperienceCard
 				logo={BuwLogo}
-				title="University of Wupeprtal"
+				title="University of Wuppertal"
 				technologies={['C', 'C++']}
 				url="https://www.uni-wuppertal.de/en/"
 			/>
