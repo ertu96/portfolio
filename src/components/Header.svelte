@@ -3,6 +3,7 @@
 	import Menu from '$lib/icons/Menu.svelte';
 	import LogoWhite from '$lib/images/logo-white.png';
 	import LogoBlack from '$lib/images/logo-black.png';
+	import Routes from './Routes.svelte';
 
 	/**
 	 * @type {boolean}
@@ -32,12 +33,7 @@
 		<img src={isDarkMode ? LogoWhite : LogoBlack} alt="Header Logo" class="max-h-full px-2 mx-2" />
 		<div class="flex-none hidden lg:block">
 			<ul class="menu menu-horizontal">
-				<!-- Navbar menu content here -->
-
-				<li><a href="/me" class="cursor-pointer">Me</a></li>
-				<li><a href="/work" class="cursor-pointer">Projects</a></li>
-				<li><a href="/contact" class="cursor-pointer">Contact</a></li>
-				<li><a href="/about" class="cursor-pointer">About</a></li>
+				<Routes />
 			</ul>
 		</div>
 		<div>

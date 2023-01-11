@@ -4,6 +4,9 @@
 	import '../app.css';
 	import Footer from '../components/Footer.svelte';
 	import { darkMode } from '../stores';
+	import Routes from '../components/Routes.svelte';
+	import LogoWhite from '$lib/images/logo-white.png';
+	import LogoBlack from '$lib/images/logo-black.png';
 
 	/**
 	 * @type {boolean}
@@ -22,7 +25,6 @@
 			<input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
 			<div class="drawer-content flex flex-col">
 				<Header />
-				<!-- Page content -->
 				<main class="p-8 my-20 container mx-auto backdrop-blur-3xl bg-white/10 dark:bg-black/10">
 					<slot />
 				</main>
@@ -32,11 +34,16 @@
 				<ul
 					class="menu p-4 w-80 bg-gray-50/30 dark:bg-gray-900/30 text-gray-900 dark:text-gray-50 backdrop-blur-lg"
 				>
-					<!-- Sidebar -->
-					<li><a href="/me" class="cursor-pointer">Me</a></li>
-					<li><a href="/work" class="cursor-pointer">Projects</a></li>
-					<li><a href="/contact" class="cursor-pointer">Contact</a></li>
-					<li><a href="/about" class="cursor-pointer">About</a></li>
+					<li>
+						<div class="flex justify-center">
+							<img
+								src={isDarkMode ? LogoWhite : LogoBlack}
+								alt="Header Logo"
+								class="h-32 w-32 px-2 mx-2"
+							/>
+						</div>
+					</li>
+					<Routes />
 				</ul>
 			</div>
 		</div>
