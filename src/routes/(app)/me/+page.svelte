@@ -3,8 +3,17 @@
 	import Place from '$lib/icons/Place.svelte';
 	import WorkHistory from '$lib/icons/WorkHistory.svelte';
 	import ProfilePicture from '$lib/images/profile-picture.jpg';
-	import Technologies from '../../components/Technologies.svelte';
+	import Technologies from '../../../components/Technologies.svelte';
+	import BuwLogo from '$lib/images/buw-logo.png';
+	import PlansoLogo from '$lib/images/planso-logo.png';
+	import DgnLogo from '$lib/images/dgn-logo.png';
+	import ExperienceCard from '../../../components/ExperienceCard.svelte';
 </script>
+
+<svelte:head>
+	<title>Ertugrul Kurnaz</title>
+	<meta name="description" content="About Me" />
+</svelte:head>
 
 <div>
 	<div>
@@ -47,5 +56,29 @@
 	<div>
 		<h1 class="text-2xl font-bold mb-4">Technologies</h1>
 		<Technologies />
+	</div>
+	<div class="divider" />
+	<div>
+		<h1 class="text-2xl font-bold mb-4">Experience</h1>
+		<div class="grid md:grid-cols-3 sm:grid-cols-2 gap-4">
+			<ExperienceCard
+				logo={DgnLogo}
+				title="Deutsches Gesundheitsnetz Service GmbH"
+				technologies={['React', 'Angular', 'Java']}
+				url="https://www.dgn.de/"
+			/>
+			<ExperienceCard
+				logo={PlansoLogo}
+				title="PlanSo GmbH"
+				technologies={['jQuery', 'PHP', 'MySQL']}
+				url="https://www.planso.de/"
+			/>
+			<ExperienceCard
+				logo={BuwLogo}
+				title="University of Wupeprtal"
+				technologies={['C', 'C++']}
+				url="https://www.uni-wuppertal.de/en/"
+			/>
+		</div>
 	</div>
 </div>
