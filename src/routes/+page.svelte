@@ -4,7 +4,7 @@
 
 <svelte:head>
 	<title>Ertugrul Kurnaz</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Ertugrul Kurnaz' Portfolio" />
 </svelte:head>
 
 <section>
