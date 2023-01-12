@@ -8,7 +8,7 @@
 		<a
 			href={`/${route}`}
 			class={`cursor-pointer ${
-				route === $page.route.id?.slice(1) ? 'bg-black/20  underline' : ''
+				route === $page.route.id?.split('/').at(-1) ? 'bg-black/20  underline' : ''
 			} `}>{`${route.charAt(0).toUpperCase()}${route.slice(1)}`}</a
 		>
 	</li>
