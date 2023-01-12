@@ -13,6 +13,6 @@
 	</div>
 	<div class="text-center text-4xl">Welcome to my portfolio</div>
 	<a href="/me">
-		<button class="btn btn-wide glass shadow-xs">Enter Page</button>
+		<button class="btn btn-wide btn-ghost btn-lg">Enter Page</button>
 	</a>
 </div>
