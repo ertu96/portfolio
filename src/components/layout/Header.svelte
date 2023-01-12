@@ -1,5 +1,5 @@
 <script>
-	import { darkMode } from '../stores';
+	import { darkMode } from '../../stores';
 	import Menu from '$lib/icons/Menu.svelte';
 	import LogoWhite from '$lib/images/logo-white.png';
 	import LogoBlack from '$lib/images/logo-black.png';

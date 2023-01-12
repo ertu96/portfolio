@@ -1,7 +1,8 @@
 <script>
 	import Check from '$lib/icons/Check.svelte';
 
-	const technologies = ['SvelteKit', 'TypeScript', 'Vite', 'Tailwindcss', 'DaisyUI'];
+	/** @type {import('./$types').PageData} */
+	export let data;
 </script>
 
 <svelte:head>
@@ -16,7 +17,7 @@
 			<p class="py-4">This site was built using following Tech-Stack</p>
 			<div class="flex justify-center">
 				<ul class="mb-8 space-y-4 ">
-					{#each technologies as tech}
+					{#each data.technologies as tech}
 						<li class="flex items-center space-x-3">
 							<Check />
 							<span>{tech}</span>

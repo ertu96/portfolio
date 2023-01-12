@@ -26,7 +26,7 @@
 	rel="noreferrer"
 	class="card lg:card-side bg-black/10 dark:bg-white/10 w-full hover:scale-105 hover:no-underline cursor-pointer"
 >
-	<figure class="w-2/5"><img src={logo} alt={title} /></figure>
+	<figure class="w-full sm:w-2/5"><img loading="lazy" src={logo} alt={title} /></figure>
 	<div class="card-body">
 		<h2 class="card-title">{title}</h2>
 		<p>Full-Stack Developer</p>
