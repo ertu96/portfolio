@@ -132,9 +132,14 @@ export const load = (() => {
 				alt: 'Vue.js'
 			},
 			{
-				page: 'https://vuetifyjs.com/en/',
-				svg: 'https://bestofjs.org/logos/vuetify.svg',
-				alt: 'Vuetify'
+				page: 'https://mui.com/',
+				svg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg',
+				alt: 'MUI'
+			},
+			{
+				page: 'https://svelte.dev/',
+				svg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/svelte/svelte-original.svg',
+				alt: 'Svelte'
 			}
 		],
 		experiences: [
