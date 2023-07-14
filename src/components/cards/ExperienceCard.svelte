@@ -17,6 +17,11 @@
 	/**
 	 * @type {string}
 	 */
+	export let role;
+
+	/**
+	 * @type {string}
+	 */
 	export let url;
 </script>
 
@@ -29,7 +34,7 @@
 	<figure class="w-full sm:w-2/5"><img loading="lazy" src={logo} alt={title} /></figure>
 	<div class="card-body">
 		<h2 class="card-title">{title}</h2>
-		<p>Full-Stack Developer</p>
+		<p>{role}</p>
 		<div class="divider my-0" />
 		<ul class="list-disc">
 			{#each technologies as technology}

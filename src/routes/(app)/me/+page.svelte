@@ -35,6 +35,7 @@
 					logo={experience.logo}
 					title={experience.title}
 					technologies={experience.technologies}
+					role={experience.role}
 					url={experience.url}
 				/>
 			{/each}

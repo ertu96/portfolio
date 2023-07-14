@@ -2,6 +2,7 @@ import type { PageLoad } from './$types';
 import BuwLogo from '$lib/images/buw-logo.png';
 import PlansoLogo from '$lib/images/planso-logo.png';
 import DgnLogo from '$lib/images/dgn-logo.png';
+import JustRelateLogo from '$lib/images/justrelate-logo.webp';
 
 export const load = (() => {
 	return {
@@ -144,21 +145,31 @@ export const load = (() => {
 		],
 		experiences: [
 			{
+				logo: JustRelateLogo,
+				title: 'JustRelate Germany GmbH',
+				technologies: ['Java', 'AWS', 'SQL', 'Docker'],
+				role: 'Project Developer',
+				url: 'https://www.justrelate.com/'
+			},
+			{
 				logo: DgnLogo,
 				title: 'Deutsches Gesundheitsnetz Service GmbH',
 				technologies: ['React', 'Angular', 'Java'],
+				role: 'Full-Stack Developer',
 				url: 'https://www.dgn.de/'
 			},
 			{
 				logo: PlansoLogo,
 				title: 'PlanSo GmbH',
 				technologies: ['jQuery', 'PHP', 'MySQL'],
+				role: 'Full-Stack Developer',
 				url: 'https://www.planso.de/'
 			},
 			{
 				logo: BuwLogo,
 				title: 'University of Wuppertal',
 				technologies: ['C', 'C++'],
+				role: 'Student',
 				url: 'https://www.uni-wuppertal.de/en/'
 			}
 		]
