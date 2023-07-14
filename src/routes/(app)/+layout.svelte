@@ -17,7 +17,7 @@
 
 <div class={isDarkMode ? 'dark' : 'light'}>
 	<div
-		class="flex flex-col min-h-screen justify-between main-background bg-slate-100 dark:bg-slate-900 text-text-gray-800 dark:text-gray-200"
+		class="flex flex-col min-h-screen justify-between main-background bg-slate-100 dark:bg-slate-900 text-gray-800 dark:text-gray-200"
 	>
 		<div class="drawer">
 			<input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
