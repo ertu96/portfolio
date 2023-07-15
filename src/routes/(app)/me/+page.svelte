@@ -2,6 +2,7 @@
 	import Technologies from '../../../components/TechnologyIcon.svelte';
 	import ExperienceCard from '../../../components/cards/ExperienceCard.svelte';
 	import PersonalHero from '../../../components/heroes/PersonalHero.svelte';
+	import RouteHeader from '../../../components/layout/RouteHeader.svelte';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -14,12 +15,12 @@
 
 <div>
 	<div>
-		<h1 class="text-2xl font-bold mb-4 text-center">Ertugrul Kurnaz</h1>
+		<RouteHeader title="Ertugrul Kurnaz" />
 		<PersonalHero />
 	</div>
 	<div class="divider" />
 	<div>
-		<h1 class="text-2xl font-bold mb-4 text-center">Technologies</h1>
+		<RouteHeader title="Technologies" />
 		<div class="grid gap-4 grid-cols-6">
 			{#each data.technologies as technology}
 				<Technologies {technology} />
@@ -28,7 +29,7 @@
 	</div>
 	<div class="divider" />
 	<div>
-		<h1 class="text-2xl font-bold mb-4 text-center">Experience</h1>
+		<RouteHeader title="Experience" />
 		<div class="grid md:grid-cols-3 sm:grid-cols-2 gap-4">
 			{#each data.experiences as experience}
 				<ExperienceCard

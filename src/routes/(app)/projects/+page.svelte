@@ -1,10 +1,21 @@
+<script>
+	import { getProjects } from '../../../api/projects/getProjects';
+	import ProjectCard from '../../../components/cards/ProjectCard.svelte';
+	import RouteHeader from '../../../components/layout/RouteHeader.svelte';
+</script>
+
 <svelte:head>
 	<title>Projects</title>
 	<meta name="description" content="List of my work" />
 </svelte:head>
 
-<div class="hero">
-	<div class="hero-content text-center">
-		<h1 class="text-2xl font-bold my-10">Coming Soon!</h1>
+<RouteHeader title="GitHub Repositories" />
+{#await getProjects()}
+	<div class="flex justify-center">
+		<span class="loading  loading-ring loading-lg" />
 	</div>
-</div>
+{:then projects}
+	{#each projects as project}
+		<ProjectCard {project} />
+	{/each}
+{/await}
