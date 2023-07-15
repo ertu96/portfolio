@@ -17,7 +17,7 @@
 
 <div class={isDarkMode ? 'dark' : 'light'}>
 	<div
-		class="flex flex-col min-h-screen justify-between main-background bg-slate-100 dark:bg-slate-900 text-text-gray-800 dark:text-gray-200"
+		class="flex flex-col min-h-screen justify-between main-background bg-slate-100 dark:bg-slate-900 text-text-gray-800 dark:text-gray-200 "
 	>
 		<div class="drawer">
 			<input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
@@ -30,7 +30,7 @@
 			<div class="drawer-side">
 				<label for="my-drawer-3" class="drawer-overlay" />
 				<ul
-					class="menu p-4 w-80 bg-gray-50/30 dark:bg-gray-900/30 text-gray-900 dark:text-gray-50 backdrop-blur-lg"
+					class="menu p-4 w-80 bg-gray-50/30 dark:bg-gray-900/30 text-gray-900 dark:text-gray-50 backdrop-blur-lg mt-20 h-calc-screen-minus-margin"
 				>
 					<li>
 						<div class="flex justify-center">

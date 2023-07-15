@@ -22,7 +22,7 @@
 </script>
 
 <div
-	class="bg-gray-50/50 dark:bg-gray-900/50 text-gray-900 dark:text-gray-50 backdrop-blur-lg fixed z-20 w-full top-0 left-0 py-2 drop-shadow-sm navbar"
+	class="bg-gray-50/50 dark:bg-gray-900/50 text-gray-900 dark:text-gray-50 backdrop-blur-lg fixed z-10 w-full top-0 left-0 py-2 drop-shadow-sm navbar h-20"
 >
 	<div class="container flex justify-between mx-auto h-10">
 		<div class="flex-none lg:hidden">
@@ -32,7 +32,7 @@
 		</div>
 		<img src={isDarkMode ? LogoWhite : LogoBlack} alt="Header Logo" class="max-h-full px-2 mx-2" />
 		<div class="flex-none hidden lg:block">
-			<ul class="menu menu-horizontal">
+			<ul class="menu menu-horizontal ">
 				<Routes />
 			</ul>
 		</div>
