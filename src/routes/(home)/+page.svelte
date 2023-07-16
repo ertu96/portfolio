@@ -9,10 +9,10 @@
 
 <div class="grid justify-items-center gap-y-10 p-10">
 	<div class="h-[25vh]">
-		<img class="max-h-full" src={LogoWhite} alt="Ertugrul Kurnaz" />
+		<img class="max-h-full" src={LogoWhite} alt="Ertugrul Kurnaz" loading="lazy" />
 	</div>
 	<div class="text-center text-4xl">Welcome to my portfolio</div>
 	<a href="/me">
-		<button class="btn btn-wide btn-ghost btn-lg">Enter Page</button>
+		<button class="btn btn-wide btn-ghost glass btn-lg">Enter Page</button>
 	</a>
 </div>

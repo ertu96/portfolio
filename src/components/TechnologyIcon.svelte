@@ -5,7 +5,7 @@
 	export let technology;
 </script>
 
-<a href={technology.page} target="_blank" rel="noreferrer">
+<a href={technology.page} target="_blank" rel="noreferrer" class="h-[40px] w-[40px]">
 	<img
 		src={technology.svg}
 		alt={technology.alt}

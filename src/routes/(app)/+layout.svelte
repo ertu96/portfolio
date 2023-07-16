@@ -38,6 +38,7 @@
 								src={isDarkMode ? LogoWhite : LogoBlack}
 								alt="Header Logo"
 								class="h-32 w-32 px-2 mx-2"
+								loading="lazy"
 							/>
 						</div>
 					</li>
