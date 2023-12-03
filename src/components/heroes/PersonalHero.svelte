@@ -2,7 +2,7 @@
 	import Laptop from '$lib/icons/Laptop.svelte';
 	import Place from '$lib/icons/Place.svelte';
 	import WorkHistory from '$lib/icons/WorkHistory.svelte';
-	import ProfilePicture from '$lib/images/profile-picture.jpg';
+	import ProfilePicture from '$lib/images/profile-picture.jpeg';
 
 	const personalHeroRows = [
 		{
