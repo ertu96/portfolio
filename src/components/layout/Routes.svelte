@@ -12,7 +12,7 @@
 <svelte:window bind:innerWidth />
 
 {#each routes as route}
-	<li>
+	<li class="mx-0.5">
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<label
 			class={`cursor-pointer hover:bg-black/10 dark:hover:bg-white/10 dark:hover:text-white  hover:scale-105 text-lg ${
