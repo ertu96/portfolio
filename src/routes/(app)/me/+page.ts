@@ -3,6 +3,7 @@ import BuwLogo from '$lib/images/buw-logo.png';
 import PlansoLogo from '$lib/images/planso-logo.png';
 import DgnLogo from '$lib/images/dgn-logo.png';
 import JustRelateLogo from '$lib/images/justrelate-logo.webp';
+import ImmocloudLogo from '$lib/images/immocloud-logo.png';
 
 export const load = (() => {
 	return {
@@ -84,7 +85,7 @@ export const load = (() => {
 			},
 			{
 				page: 'https://nestjs.com/',
-				svg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-plain.svg',
+				svg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-original.svg',
 				alt: 'NestJS'
 			},
 			{
@@ -141,10 +142,21 @@ export const load = (() => {
 				page: 'https://svelte.dev/',
 				svg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/svelte/svelte-original.svg',
 				alt: 'Svelte'
+			},
+			{
+				page: 'https://mongodb.com/',
+				svg: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg',
+				alt: 'MongoDB'
 			}
 		],
 		experiences: [
 			{
+				logo: ImmocloudLogo,
+				title: 'immocloud GmbH',
+				technologies: ['Vue.js', 'Spring Boot', 'MongoDB'],
+				role: 'Full-Stack Developer',
+				url: 'https://www.immocloud.de/'
+			},			{
 				logo: JustRelateLogo,
 				title: 'JustRelate Germany GmbH',
 				technologies: ['Java', 'AWS', 'SQL', 'Docker'],
