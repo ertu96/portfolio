@@ -3,6 +3,7 @@
 	import ExperienceCard from '../../../components/cards/ExperienceCard.svelte';
 	import PersonalHero from '../../../components/heroes/PersonalHero.svelte';
 	import RouteHeader from '../../../components/layout/RouteHeader.svelte';
+	import Timeline from '../../../components/timeline/Timeline.svelte';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -29,17 +30,7 @@
 	</div>
 	<div class="divider" />
 	<div>
-		<RouteHeader title="Experience" />
-		<div class="grid md:grid-cols-3 sm:grid-cols-2 gap-4">
-			{#each data.experiences as experience}
-				<ExperienceCard
-					logo={experience.logo}
-					title={experience.title}
-					technologies={experience.technologies}
-					role={experience.role}
-					url={experience.url}
-				/>
-			{/each}
-		</div>
+		<RouteHeader title="Timeline" />
+		<Timeline />
 	</div>
 </div>

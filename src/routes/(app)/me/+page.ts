@@ -151,30 +151,31 @@ export const load = (() => {
 		],
 		experiences: [
 			{
-				logo: ImmocloudLogo,
 				title: 'immocloud GmbH',
 				technologies: ['Vue.js', 'Spring Boot', 'MongoDB'],
 				role: 'Full-Stack Developer',
+				logo: ImmocloudLogo,
 				url: 'https://www.immocloud.de/'
-			},			{
-				logo: JustRelateLogo,
+			},
+			{
 				title: 'JustRelate Germany GmbH',
+				logo: JustRelateLogo,
 				technologies: ['Java', 'AWS', 'SQL', 'Docker'],
 				role: 'Project Developer',
 				url: 'https://www.justrelate.com/'
 			},
 			{
-				logo: DgnLogo,
 				title: 'Deutsches Gesundheitsnetz Service GmbH',
 				technologies: ['React', 'Angular', 'Java'],
 				role: 'Full-Stack Developer',
+				logo: DgnLogo,
 				url: 'https://www.dgn.de/'
 			},
 			{
-				logo: PlansoLogo,
 				title: 'PlanSo GmbH',
 				technologies: ['jQuery', 'PHP', 'MySQL'],
 				role: 'Full-Stack Developer',
+				logo: PlansoLogo,
 				url: 'https://www.planso.de/'
 			},
 			{
