@@ -82,7 +82,7 @@
 
 	const openDialog = (experience: Experience) => {
 		selectedExperience = experience;
-		const dialog = document.getElementById('my_modal_5');
+		const dialog = document.getElementById('timeline-modal');
 		if (!dialog) return;
 		dialog.showModal();
 	};
