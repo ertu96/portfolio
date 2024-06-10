@@ -1,6 +1,6 @@
 import type { PageLoad } from './$types';
 import BuwLogo from '$lib/images/buw-logo.png';
-import PlansoLogo from '$lib/images/planso-logo.png';
+import PlansoLogo from '$lib/images/planso-logo.webp';
 import DgnLogo from '$lib/images/dgn-logo.png';
 import JustRelateLogo from '$lib/images/justrelate-logo.webp';
 import ImmocloudLogo from '$lib/images/immocloud-logo.png';

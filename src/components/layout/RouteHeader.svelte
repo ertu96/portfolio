@@ -3,6 +3,18 @@
 	 * @type {string}
 	 */
 	export let title;
+
+	/**
+	 * @type {string}
+	 */
+	export let subInformation = '';
+
 </script>
 
-<h1 class="text-2xl font-bold mb-4 text-center">{title}</h1>
+
+<div class="text-center mb-4">
+	<h1 class="text-2xl font-bold ">{title}</h1>
+	{#if subInformation}
+		<p>{subInformation}</p>
+	{/if}
+</div>

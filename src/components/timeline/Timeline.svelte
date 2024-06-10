@@ -1,7 +1,8 @@
 <script lang="ts">
 	import TimelineMiddle from '$lib/icons/TimelineMiddle.svelte';
 	import BuwLogo from '$lib/images/buw-logo.png';
-	import PlansoLogo from '$lib/images/planso-logo.png';
+	import PlansoLogo from '$lib/images/planso-logo.webp';
+	import OitLogo from '$lib/images/oit-logo.png';
 	import DgnLogo from '$lib/images/dgn-logo.png';
 	import JustRelateLogo from '$lib/images/justrelate-logo.webp';
 	import ImmocloudLogo from '$lib/images/immocloud-logo.png';
@@ -14,7 +15,7 @@
 			city: 'Dusseldorf',
 			country: 'de',
 			title: 'immocloud GmbH',
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla ante vel dolor varius, vitae euismod purus facilisis.',
+			description: 'As a full stack developer for a SaaS real estate management platform, I contributed to both frontend and backend development using Vue.js and Spring Boot, respectively, with MongoDB as the database. Working in an Agile environment with Scrum, I was involved in regular sprints, stand-ups, and retrospectives to ensure continuous improvement and delivery. I gained substantial experience in testing methodologies and frameworks, particularly with JUnit and Mockito for backend testing and Vitest for frontend testing, enhancing the overall quality and reliability of the application. Additionally, I collaborated closely with cross-functional teams to integrate new features and optimize performance, ensuring the platform met the evolving needs of users in the real estate sector.',
 			role: 'Full-Stack Developer',
 			technologies: ['Vue.js', 'Spring Boot', 'MongoDB'],
 			logo: ImmocloudLogo,
@@ -62,7 +63,7 @@
 			description: 'A six-month study abroad research activity was conducted in the Multimedia Department, focusing on the development of a prototype for a running game designed for Android smartphones. Utilizing Unity and C#, the research involved extensive development and testing to create an engaging and functional game prototype. This experience provided a deepened expertise in mobile game development, strengthened programming skills in C#, and offered valuable insights into the practical application of multimedia technologies.',
 			role: 'Student',
 			technologies: ['C#', 'Unity'],
-			logo: BuwLogo,
+			logo: OitLogo,
 			url: 'https://www.oit.ac.jp/english/'
 		},
 		{
@@ -88,7 +89,7 @@
 	};
 </script>
 
-<ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+<ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical ">
 	{#each experiences as experience, index}
 		<li>
 			{#if index > 0}
@@ -100,10 +101,10 @@
 			<div class={`timeline-${index%2===0 ? 'start': 'end'} ${index%2===0 && 'md:text-end'} mb-10 cursor-pointer`}
 					 on:click={() => openDialog(experience)} role="button" tabIndex={0}
 			>
-				<time class="font-mono italic">{experience.duration}</time>
+				<time class="font-mono italic bg-success dark:text-black p-1 rounded-sm">{experience.duration}</time>
 				<div class="text-lg font-black">{experience.title}</div>
 				<p>{experience.role}</p>
-				<ul class={`px-2 flex flex-col gap-0.5 ${index%2===0 && 'items-end'}`}>
+				<ul class={`hidden px-2 md:flex flex-col gap-0.5 ${index%2===0 && 'items-end'}`}>
 					{#each experience.technologies as technology}
 						<li
 							class="badge badge-lg bg-black/10 dark:bg-white/10 dark:text-white border-0 text-sm font-light">{technology}</li>

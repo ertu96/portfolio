@@ -30,7 +30,7 @@
 	</div>
 	<div class="divider" />
 	<div>
-		<RouteHeader title="Timeline" />
+		<RouteHeader title="Timeline" subInformation="(Click on each to read more)" />
 		<Timeline />
 	</div>
 </div>
