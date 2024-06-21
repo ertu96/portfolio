@@ -1,3 +1,7 @@
+<svelte:head>
+	<script defer src="https://cloud.umami.is/script.js" data-website-id="4f236b42-7fd6-4fde-9666-1e6f83824b2f"></script>
+</svelte:head>
+
 <script>
 	import Header from '../../components/layout/Header.svelte';
 	import Footer from '../../components/layout/Footer.svelte';
