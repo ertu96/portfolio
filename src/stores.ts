@@ -5,7 +5,7 @@ export const Theme = {
 	DARK: 'DARK'
 };
 
-export const theme = writable(localStorage.getItem('theme') || Theme.LIGHT);
+export const theme = writable(localStorage.getItem('theme') || Theme.DARK);
 
 theme.subscribe((value) => {
 	localStorage.setItem('theme', value);
