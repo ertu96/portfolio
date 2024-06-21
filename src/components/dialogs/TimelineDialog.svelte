@@ -20,7 +20,7 @@
 				</div>
 			</div>
 			<a href={experience.url} target="_blank">
-				<img src={experience.logo} class="m-2" />
+				<img src={experience.logo} loading="lazy" class="m-2" />
 			</a>
 			<div class="divider"></div>
 			<table class="w-full table">

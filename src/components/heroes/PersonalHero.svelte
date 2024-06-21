@@ -27,7 +27,7 @@
 	<div class="hero-content lg:flex-row-reverse gap-12">
 		<img
 			src={ProfilePicture}
-			class="max-h-60 shadow object-center object-cover rounded-sm"
+			class="h-60 shadow object-center object-cover rounded-sm"
 			alt="Profile Potrait"
 			loading="lazy"
 		/>
