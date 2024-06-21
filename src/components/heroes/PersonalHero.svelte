@@ -25,12 +25,15 @@
 
 <div class="hero">
 	<div class="hero-content lg:flex-row-reverse gap-12">
-		<img
-			src={ProfilePicture}
-			class="h-60 shadow object-center object-cover rounded-sm"
-			alt="Profile Potrait"
-			loading="lazy"
-		/>
+		<div class="h-60 w-40">
+
+			<img
+				src={ProfilePicture}
+				class=" shadow rounded-sm"
+				alt="Profile Potrait"
+				loading="lazy"
+			/>
+		</div>
 
 		<div>
 			<dl
