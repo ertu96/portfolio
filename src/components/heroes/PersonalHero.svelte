@@ -26,7 +26,6 @@
 <div class="hero">
 	<div class="hero-content lg:flex-row-reverse gap-12">
 		<div class="h-60 w-40">
-
 			<img
 				src={ProfilePicture}
 				class=" shadow rounded-sm"
