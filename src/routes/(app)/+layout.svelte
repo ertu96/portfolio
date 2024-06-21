@@ -5,6 +5,7 @@
 	import Routes from '../../components/layout/Routes.svelte';
 	import LogoWhite from '$lib/images/logo-white.png';
 	import LogoBlack from '$lib/images/logo-black.png';
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 
 	/**
 	 * @type {boolean}
@@ -13,6 +14,8 @@
 	theme.subscribe((value) => {
 		isDarkMode = value === Theme.DARK;
 	});
+
+	injectSpeedInsights();
 </script>
 
 <div class={isDarkMode ? 'dark' : 'light'}>
