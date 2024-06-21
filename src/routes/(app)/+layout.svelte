@@ -1,7 +1,7 @@
 <script>
 	import Header from '../../components/layout/Header.svelte';
 	import Footer from '../../components/layout/Footer.svelte';
-	import { darkMode } from '../../stores';
+	import { Theme, theme } from '../../stores';
 	import Routes from '../../components/layout/Routes.svelte';
 	import LogoWhite from '$lib/images/logo-white.png';
 	import LogoBlack from '$lib/images/logo-black.png';
@@ -10,8 +10,8 @@
 	 * @type {boolean}
 	 */
 	let isDarkMode;
-	darkMode.subscribe((value) => {
-		isDarkMode = value;
+	theme.subscribe((value) => {
+		isDarkMode = value === Theme.DARK;
 	});
 </script>
 
