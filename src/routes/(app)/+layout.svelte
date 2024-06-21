@@ -9,10 +9,6 @@
 	import Routes from '../../components/layout/Routes.svelte';
 	import LogoWhite from '$lib/images/logo-white.png';
 	import LogoBlack from '$lib/images/logo-black.png';
-	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
-	import { inject } from '@vercel/analytics';
-	import { dev } from '$app/environment';
-
 
 	/**
 	 * @type {boolean}
@@ -21,10 +17,6 @@
 	theme.subscribe((value) => {
 		isDarkMode = value === Theme.DARK;
 	});
-
-	injectSpeedInsights();
-	inject({ mode: dev ? 'development' : 'production' });
-
 </script>
 
 <div class={isDarkMode ? 'dark' : 'light'}>
