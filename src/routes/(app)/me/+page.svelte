@@ -1,6 +1,5 @@
 <script>
-	import Technologies from '../../../components/TechnologyIcon.svelte';
-	import ExperienceCard from '../../../components/cards/ExperienceCard.svelte';
+	import TechnologyIcon from '../../../components/TechnologyIcon.svelte';
 	import PersonalHero from '../../../components/heroes/PersonalHero.svelte';
 	import RouteHeader from '../../../components/layout/RouteHeader.svelte';
 	import Timeline from '../../../components/timeline/Timeline.svelte';
@@ -22,9 +21,9 @@
 	<div class="divider" />
 	<div>
 		<RouteHeader title="Technologies" />
-		<div class="grid gap-4 grid-cols-6">
+		<div class="grid gap-10 grid-cols-4">
 			{#each data.technologies as technology}
-				<Technologies {technology} />
+				<TechnologyIcon {technology} />
 			{/each}
 		</div>
 	</div>

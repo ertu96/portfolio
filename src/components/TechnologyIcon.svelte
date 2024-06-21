@@ -5,12 +5,12 @@
 	export let technology;
 </script>
 
-<a href={technology.page} target="_blank" rel="noreferrer" class="h-[40px] w-[40px]">
+<a href={technology.page} target="_blank" rel="noreferrer" class="h-[45px] w-[45px]">
 	<img
 		src={technology.svg}
 		alt={technology.alt}
-		width="40"
-		height="40"
+		width="45"
+		height="45"
 		class="hover:scale-150"
 		loading="lazy"
 	/>
