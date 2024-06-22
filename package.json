@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "license": "UNLICENSED",
   "version": "1.2.0",
   "type": "module",
   "scripts": {

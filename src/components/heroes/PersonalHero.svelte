@@ -28,7 +28,7 @@
 		<img
 			src={ProfilePicture}
 			class="shadow rounded-sm w-40"
-			alt="Profile Potrait"
+			alt="Profile Portrait"
 			loading="lazy"
 		/>
 
